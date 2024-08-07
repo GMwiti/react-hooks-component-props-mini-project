@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Article (blogArticle){
-    const {title,date = "January 1, 1970",preview} = blogArticle
+function Article ({post}){
+    const {title,date="January 1, 1970",preview} = post
     return(
         <article>
        <h3>{title}</h3>
